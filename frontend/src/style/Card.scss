@@ -1,0 +1,74 @@
+.cardsItem {
+    width: 340px;
+    min-height: 230px;
+    box-shadow: 0px 0px 45.9px 0px rgba(0, 0, 0, 0.286);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background-color: #ffffff03;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    cursor: pointer;
+
+    transition: 0.3s;
+    &:hover {
+        background-color: #ffffff;
+    }
+    .cardHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .cardsTitle {
+            margin: 15px 25px 0 25px;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 32px;
+            text-overflow: ellipsis;
+            line-height: 38.73px;
+        }
+        .redCross {
+            display: none;
+        }
+    }
+   
+    .cardsBody {
+        font-size: 12px;
+        margin: 15px 25px;
+        height: 150px;
+        position: relative;
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}
+
+.selected {
+    box-shadow: 0px 0px 45.9px 0px #ff2f54;
+    .cardHeader {
+        position: relative;
+        .redCross {
+            cursor: pointer;
+            display: block;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            top: 15%;
+            bottom: 0;
+            left: 86%;
+            right: 0;
+        }
+        
+        .redCross:after {
+
+            content: "\274c"; /* use the hex value here... */
+            font-size: 25px; 
+            color: #FFF;
+            line-height: 50px;
+            text-align: center;
+        }
+    }
+}
