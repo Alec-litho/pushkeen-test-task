@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "homepage": "http://alec-litho.github.io/pushkeen-test-task/frontend",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
