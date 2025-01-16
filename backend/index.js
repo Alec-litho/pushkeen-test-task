@@ -5,7 +5,7 @@ const { default: cardValidation } = require('./src/middlewares/validateCard.js')
 const cors = require("cors");
 
 app.use(cors({
-  origin:"https://pushkeen-test-task.vercel.app",
+  origin:"https://pushkeen-test-task-server.vercel.app",
   methods: ["POST","DELETE","GET"],
   credentials: true
 }))
