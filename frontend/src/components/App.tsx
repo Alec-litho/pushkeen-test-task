@@ -12,14 +12,14 @@ function App() {
 
     async function fetchRequest() {
         setStatus('loading');
-        const data = await fetch('http://localhost:3000/api/cards');
+        const data = await fetch('https://pushkeen-test-task-server.vercel.app/api/cards');
         const cards = await data.json();
         setCardsData(cards);
         setStatus('success');
     }
     async function publishCard(data:{title:string,body:string}) {
         try {
-            let result = await fetch('http://localhost:3000/api/cards', {
+            let result = await fetch('https://pushkeen-test-task-server.vercel.app/api/cards', {
                 method:"POST",
                 headers: {'Content-Type': 'application/json;charset=utf-8'},
                 body: JSON.stringify(data)
@@ -34,11 +34,12 @@ function App() {
     }
     async function deleteCard(id:number) {
         try {
-            let result = await fetch(`http://localhost:3000/api/cards/${id}`, {
+            let result = await fetch(`https://pushkeen-test-task-server.vercel.app/api/cards${id}`, {
                 method:"DELETE",
                 headers: {'Content-Type': 'application/json;charset=utf-8'}
             })
             setCardsData(prev => prev.filter(cardData => cardData.id !== id))
+            console.log(result)
         } catch (error) {
             console.error(error)
         }
