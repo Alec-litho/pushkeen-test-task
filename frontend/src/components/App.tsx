@@ -7,8 +7,8 @@ import CardModal from './CardModal';
 function App() {
     let app = useRef<HTMLDivElement | null>(null);
     let [modal, setModal] = useState<boolean>(false);
-    const [cardsData, setCardsData] = useState<ICard[] | []>([]);
     const [status, setStatus] = useState<'idle' | 'loading' | 'success'>('idle');
+    const [cardsData, setCardsData] = useState<ICard[] | []>([]);
 
     async function fetchRequest() {
         setStatus('loading');

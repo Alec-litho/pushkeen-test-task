@@ -1,12 +1,11 @@
 .rectangle {
+    width: 50%;
     position: fixed;
     top: 35%;
-    border-radius: 300px;
-    width: 49%;
     min-width: 300px;
     height: 300px;
     z-index: -1;
-
+    border-radius: 300px;
     background: #7075f1;
     transform: rotate(390deg) scale(1);
 

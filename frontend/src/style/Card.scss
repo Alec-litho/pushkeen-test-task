@@ -1,17 +1,16 @@
 .cardsItem {
     width: 340px;
     min-height: 230px;
-    box-shadow: 0px 0px 45.9px 0px rgba(0, 0, 0, 0.286);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    background-color: #ffffff03;
-    border-radius: 25px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 0px 45.9px 0px rgba(0, 0, 0, 0.286);
+    backdrop-filter: blur(12px);
+    border-radius: 25px;
+    -webkit-backdrop-filter: blur(12px);
+    background-color: #ffffff03;
     user-select: none;
     cursor: pointer;
 
-    transition: 0.3s;
     &:hover {
         background-color: #ffffff;
     }
@@ -21,9 +20,9 @@
         justify-content: space-between;
         .cardsTitle {
             margin: 15px 25px 0 25px;
+            font-size: 32px;
             white-space: nowrap;
             overflow: hidden;
-            font-size: 32px;
             text-overflow: ellipsis;
             line-height: 38.73px;
         }

@@ -9,10 +9,9 @@ export interface CardProps {
 }
 
 const Card = ({ id, title, body, deleteCard }: CardProps) => {
-    const [selected, setSelected] = useState(false);
-
+    const [isSelected, setIsSelected] = useState(false);
     return (
-        <li onClick={() => setSelected(prev => !prev)} className={`cardsItem ${selected ? 'selected' : ''}`}>
+        <li onClick={() => setIsSelected(prev => !prev)} className={`cardsItem ${isSelected ? 'selected' : ''}`}>
             <div className="cardHeader">
                 <h3 className='cardsTitle'>{title}</h3>
                 <div className='redCross' onClick={() => deleteCard(id)}></div>

@@ -4,7 +4,11 @@ const cardRouter = require('./routes/card.routes.js');
 const { default: cardValidation } = require('./middlewares/validateCard');
 const cors = require("cors");
 
-app.use(cors())
+app.use(cors({
+  origin:"https://pushkeen-test-task.vercel.app",
+  methods: ["POST","DELETE","GET"],
+  credentials: true
+}))
 app.use(express.json());
 app.use('/api', cardRouter);
 // app.post('/cards', cardValidation, cardRouter.post);
