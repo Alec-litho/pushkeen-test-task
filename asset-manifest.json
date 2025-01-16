@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pushkeen-test-task/frontend/static/css/main.1beab149.css",
+    "main.js": "/pushkeen-test-task/frontend/static/js/main.6d3bbdef.js",
+    "index.html": "/pushkeen-test-task/frontend/index.html",
+    "main.1beab149.css.map": "/pushkeen-test-task/frontend/static/css/main.1beab149.css.map",
+    "main.6d3bbdef.js.map": "/pushkeen-test-task/frontend/static/js/main.6d3bbdef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1beab149.css",
+    "static/js/main.6d3bbdef.js"
+  ]
+}
