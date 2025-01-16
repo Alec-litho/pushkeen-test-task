@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-const cardRouter = require('./routes/card.routes.js');
-const { default: cardValidation } = require('./middlewares/validateCard');
+const cardRouter = require('./src/routes/card.routes.js');
+const { default: cardValidation } = require('./src/middlewares/validateCard.js');
 const cors = require("cors");
 
 app.use(cors({
