@@ -5,7 +5,7 @@ const { default: cardValidation } = require('./src/middlewares/validateCard.js')
 const cors = require("cors");
 
 app.use(cors({
-  origin:"https://alec-litho.github.io/pushkeen-test-task/",
+  origin:"https://alec-litho.github.io",
   methods: ["POST","DELETE","GET"],
   credentials: true
 }))
