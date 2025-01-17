@@ -3,13 +3,15 @@
     min-height: 230px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 45.9px 0px rgba(0, 0, 0, 0.286);
+    box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.243);
     backdrop-filter: blur(12px);
     border-radius: 25px;
     -webkit-backdrop-filter: blur(12px);
     background-color: #ffffff03;
     user-select: none;
     cursor: pointer;
+    transition: .2s;
+
 
     &:hover {
         background-color: #ffffff;
@@ -24,7 +26,7 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            line-height: 38.73px;
+            line-height: 40px;
         }
         .redCross {
             display: none;
@@ -46,7 +48,7 @@
 }
 
 .selected {
-    box-shadow: 0px 0px 45.9px 0px #ff2f54;
+    box-shadow: 0px 0px 35px 0px #ff2f54;
     .cardHeader {
         position: relative;
         .redCross {
@@ -63,7 +65,7 @@
         
         .redCross:after {
 
-            content: "\274c"; /* use the hex value here... */
+            content: "\274c";
             font-size: 25px; 
             color: #FFF;
             line-height: 50px;

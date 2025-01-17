@@ -3,17 +3,17 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "http://alec-litho.github.io/pushkeen-test-task/frontend",
+  "homepage": "https://alec-litho.github.io/pushkeen-test-task/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
-    
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "^5.0.1"

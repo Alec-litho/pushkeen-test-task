@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Card, { CardProps } from './Card';
 import '../style/CardsList.scss';
+import '../style/loader.scss';
 
 interface ICardsList {
     cardsData: ICard[] | []
@@ -13,20 +14,25 @@ const CardsList = ({cardsData, status, deleteCard}: ICardsList) => {
     return (
         <>
             {status === 'loading' ? (
-                <div>loading...</div>
-            ) : status === 'success' ? (
-                <ul className='CardsList'>{
-                    cardsData && cardsData.map((card) => 
-                        <Card key={card.id} 
-                            title={card.title} 
-                            body={card.body} 
-                            id={card.id} 
-                            deleteCard={deleteCard}
-                        />
-                    )
+                <div className="loaderWrapper">
+                    <div className='loader'></div>
+                </div>) 
+                : 
+                status === 'success' ? (
+                    <ul className='CardsList'>{
+                        cardsData && cardsData.map((card) => 
+                            <Card key={card.id} 
+                                title={card.title} 
+                                body={card.body} 
+                                id={card.id} 
+                                deleteCard={deleteCard}
+                            />
+                        )
                     }</ul>
-            ) : (
-                <div>something went wrong...</div>
+                ) 
+                : 
+                (
+                    <h1 style={{color:"red"}}>something went wrong...</h1>
             )}
         </>
     );

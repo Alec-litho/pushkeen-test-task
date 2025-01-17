@@ -8,7 +8,7 @@ function App() {
     let app = useRef<HTMLDivElement | null>(null);
     let [modal, setModal] = useState<boolean>(false);
     const [status, setStatus] = useState<'idle' | 'loading' | 'success'>('idle');
-    const [cardsData, setCardsData] = useState<ICard[] | []>([]);
+    const [cardsData, setCardsData] = useState<ICard[] | []>([{title:"lox",body:"dwiqFJI RWHIQfi", id:1314, createdAt:"22424"}]);
 
     async function fetchRequest() {
         setStatus('loading');
@@ -34,7 +34,7 @@ function App() {
     }
     async function deleteCard(id:number) {
         try {
-            let result = await fetch(`https://pushkeen-test-task-server.vercel.app/api/cards${id}`, {
+            let result = await fetch(`https://pushkeen-test-task-server.vercel.app/api/cards/${id}`, {
                 method:"DELETE",
                 headers: {'Content-Type': 'application/json;charset=utf-8'}
             })
