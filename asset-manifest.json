@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/pushkeen-test-task/static/css/main.1beab149.css",
-    "main.js": "/pushkeen-test-task/static/js/main.6d3bbdef.js",
+    "main.css": "/pushkeen-test-task/static/css/main.323dfdb3.css",
+    "main.js": "/pushkeen-test-task/static/js/main.aad59a7c.js",
     "index.html": "/pushkeen-test-task/index.html",
-    "main.1beab149.css.map": "/pushkeen-test-task/static/css/main.1beab149.css.map",
-    "main.6d3bbdef.js.map": "/pushkeen-test-task/static/js/main.6d3bbdef.js.map"
+    "main.323dfdb3.css.map": "/pushkeen-test-task/static/css/main.323dfdb3.css.map",
+    "main.aad59a7c.js.map": "/pushkeen-test-task/static/js/main.aad59a7c.js.map"
   },
   "entrypoints": [
-    "static/css/main.1beab149.css",
-    "static/js/main.6d3bbdef.js"
+    "static/css/main.323dfdb3.css",
+    "static/js/main.aad59a7c.js"
   ]
 }
